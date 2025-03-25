@@ -1,6 +1,4 @@
-
-  
-const menuBtn = document.querySelector(".menu-btn");
+ const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const dropdowns = document.querySelectorAll(".dropdown");
 

@@ -4357,11 +4357,10 @@ body.single .gdlr-blog-full {
 	margin-bottom: 35px;
 }
 
+/* new add */
+/* border raduis remove */
 .gdlr-speaker-type-round .gdlr-speaker-thumbnail,
 .gdlr-speaker-type-round .gdlr-speaker-thumbnail-overlay {
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
 	overflow: hidden;
 }
 
@@ -4387,8 +4386,6 @@ body.single .gdlr-blog-full {
 
 	.gdlr-speaker-thumbnail img {
 		display: block;
-		width : 230px;
-		height : 175px;
 	}
 
 	.gdlr-speaker-thumbnail .gdlr-speaker-thumbnail-title {

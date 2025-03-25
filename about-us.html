@@ -9,7 +9,7 @@
     <meta property="og:image" content="">
 
     <title>About Us</title>
-    <!-- Swiper CSS -->
+     <!-- Swiper CSS -->
     <link rel="stylesheet" href="npm/swiper%4011/swiper-bundle.min.css">
     <link rel="stylesheet" href="_c/css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="_c/plugins/superfish/css/superfish.css" type="text/css">
@@ -33,6 +33,8 @@
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="ajax/libs/flickity/2.3.0/flickity.min.css">
     <link rel="stylesheet" href="flickity%402.3.0/dist/flickity.min.css">
+    <!-- new style add -->
+	<link rel="stylesheet" href="./_c/css/dev-style-v1.css">
   </head>
 
   <body data-rsssl="1" class="home page-template-default page page-id-3304 _masterslider _msp_version_3.2.7">
@@ -142,10 +144,10 @@
         <div class="with-sidebar-wrapper gdlr-type-no-sidebar">
             <!-- hero section -->
             <div class="gdlr-page-title-wrapper gdlr-parallax-wrapper gdlr-title-large-center" style="
-                background-image: url('_c/images/ayur logo.png');
+                background-image: url('_c/images/about/banner/DSC_7251.JPG');
                 background-position: center 0px;
 background-size: inherit;
-              " data-bgspeed="0.5">
+              ">
                 <div class="gdlr-page-title-overlay"></div>
                 <div class="gdlr-page-title-container container">
                     <h1 class="gdlr-page-title">About Us</h1>
@@ -223,30 +225,20 @@ background-size: inherit;
                     </div>
                     <div class="about-image slider-container">
                         <div class="slider">
-                            <img src="_c/images/home/sliderhome1.jpeg" alt="Ayurvedic Oils">
-                            <img src="_c/images/home/sliderhome2.jpeg" alt="Natural Healing">
-                            <img src="_c/images/home/sliderhome3.jpeg" alt="Natural Healing">
-                            <img src="_c/images/home/sliderhome4.jpeg" alt="Natural Healing">
-                            <img src="_c/images/home/sliderhome5.jpeg" alt="Natural Healing">
-                            <img src="_c/images/home/sliderhome6.jpeg" alt="Natural Healing">
-                            <img src="_c/images/home/sliderhome7.jpeg" alt="Natural Healing">
-                            <img src="_c/images/home/sliderhome8.jpeg" alt="Natural Healing">
+                            <img src="_c/images/home/sliderhome1.jpeg" alt="Ayurvedic Oils" class="slide">
+                            <img src="_c/images/home/sliderhome2.jpeg" alt="Natural Healing" class="slide">
+                            <img src="_c/images/home/sliderhome3.jpeg" alt="Natural Healing" class="slide">
+                            <img src="_c/images/home/sliderhome4.jpeg" alt="Natural Healing" class="slide">
+                            <img src="_c/images/home/sliderhome5.jpeg" alt="Natural Healing" class="slide">
+                            <img src="_c/images/home/sliderhome6.jpeg" alt="Natural Healing" class="slide">
+                            <img src="_c/images/home/sliderhome7.jpeg" alt="Natural Healing" class="slide">
+                            <img src="_c/images/home/sliderhome8.jpeg" alt="Natural Healing" class="slide">
                         </div>
-
+                    
                         <!-- Navigation Buttons -->
-                        <button class="prev" onclick="changeSlide(-1)">
-                            &#10094;
-                        </button>
-                        <button class="next" onclick="changeSlide(1)">
-                            &#10095;
-                        </button>
-
-                        <!-- Dot Indicators -->
-                        <div class="dots">
-                            <span class="dot" onclick="goToSlide(0)"></span>
-                            <span class="dot" onclick="goToSlide(1)"></span>
-                            <span class="dot" onclick="goToSlide(2)"></span>
-                        </div>
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                
                     </div>
                 </div>
             </section>
@@ -670,6 +662,43 @@ background-size: inherit;
 </style> 
     </div>
 
+        <!--new add Unveiling the Power of Ayurveda  -->
+        <script>
+            let currentSlide = 0;
+        const slides = document.querySelectorAll(".slide");
+        const totalSlides = slides.length;
+        
+        function updateSlide() {
+            const slider = document.querySelector(".slider");
+            slider.style.transform = `translateX(${-currentSlide * 100}%)`;
+        
+            // Update active dot
+            document.querySelectorAll(".dot").forEach((dot, index) => {
+                dot.classList.toggle("active", index === currentSlide);
+            });
+        }
+        
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            updateSlide();
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlide();
+        }
+        
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 3000);
+        
+        // Initialize first slide as active
+        updateSlide();
+        
+        </script>
+            <!-- Unveiling the Power of Ayurveda  -->
+
     <script src="flickity%402.3.0/dist/flickity.pkgd.min.js"></script>
     <script>
       var flkty = new Flickity("[data-carousel]", {
@@ -853,6 +882,8 @@ background-size: inherit;
     <script src="view-js/certificate.js"></script>
     <script src="_c/js/custom.js"></script>
 	<script src="view-js/common.js"></script>
+    
+
     
   </body>
 </html>
