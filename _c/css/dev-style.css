@@ -1,0 +1,134 @@
+/* Certificate */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.form-select,
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+    .form-input::placeholder {
+        color: #9ca3af;
+    }
+
+.required::after {
+    content: " *";
+    color: #ef4444;
+}
+
+.form-submit-btn {
+    background-color: #c32026;
+    color: white;
+    padding: 9px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .form-submit-btn:hover {
+        background-color: #45a049;
+    }
+
+.submit-btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 126px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        /* Stacks the form fields in a single column */
+    }
+
+    .submit-btn-container {
+        padding-top: 50px;
+        /* Adjusts the position of the submit button */
+    }
+
+    .form-group {
+        min-width: 100%;
+        /* Ensures that form fields take full width on smaller screens */
+    }
+
+    .form-label {
+        font-size: 16px;
+        /* Larger font size for labels on smaller screens */
+    }
+
+    .form-select,
+    .form-input {
+        font-size: 14px;
+        /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-submit-btn {
+        font-size: 14px;
+        /* Make the submit button smaller on very small screens */
+        padding: 10px 20px;
+        /* Adjust button size for small screens */
+    }
+}
+
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.download-btn {
+    background-color: #57d94e;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .download-btn:hover {
+        background-color: #0056b3;
+    }
