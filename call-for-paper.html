@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="_c/css/dev-responsive.css" type="text/css" media="all">
     <link href="npm/select2%404.0.13/dist/css/select2.min.css" rel="stylesheet">
     <link rel="icon" href="assets/favicon-32x32-removebg-preview.png" type="image/x-icon">
+	<link rel="stylesheet" href="./_c/css/dev-style-v1.css">
 
 
 
@@ -54,7 +55,6 @@
 
    
     <div class="logo">
-        <img src="_c/images/png%20plain%20final%20logo.png" alt="Logo 2">
         <img src="_c/images/ayur%20logo.png" alt="Logo 1">
     </div>
 
@@ -77,7 +77,7 @@
                 </a>
             </div>
         </div>
-        <div class="nav-item dropdown">
+        <div class="nav-item">
             <a class="" href="delegate.html">
                 Delegate
             </a>
@@ -120,19 +120,22 @@
                 </a>
             </div>
         </div>
-        <div class="nav-item dropdown">
-            <a class="" href="delegate.html">
-                Register
-            </a>
-        </div>
         <div class="nav-item">
             <a class="" href="contact-us.html">
                 Contact Us
             </a>
         </div>
+		<div class="nav-item dropdown none-display-register">
+			<a class="active registerbtn" href="delegate.html">
+				Registration 
+			</a>
+		</div>
     </nav>
 
-    <div class="menu-btn">☰</div>
+    <div class="menu-btn">
+		<a class="registerbtn" href="delegate.html">Registration </a>
+		☰
+	</div>
     </div>
 </header>
 
@@ -144,7 +147,7 @@
 			<div class="gdlr-page-title-wrapper gdlr-parallax-wrapper gdlr-title-large-center" style="
                 background-image: url('_c/website_image/callforpaperbg.jpeg');
                 background-position: center -419px;
-				background-size: 100%;
+				background-size: cover;
 
 			  ">
 				<div class="gdlr-page-title-overlay"></div>

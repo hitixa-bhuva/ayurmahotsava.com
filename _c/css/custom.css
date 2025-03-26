@@ -181,7 +181,7 @@
 }
 
     .logo img {
-        height: 70px;
+        height: 95px;
     }
 
 .nav-links {
@@ -1297,7 +1297,7 @@ body {
 /* Hero Slider */
 .delegate-hero-slider {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 

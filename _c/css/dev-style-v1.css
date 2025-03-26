@@ -37,3 +37,46 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
+@keyframes fade-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.nav-item .registerbtn {
+    padding: 15px 15px;
+    text-decoration: none;
+    color: #ffffff !important; 
+    transition: all 0.3s ease-in-out;	
+    background-color: #c32026; /* Highlight background */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+	box-shadow: 0 0 10px rgba(195, 32, 38, 0.5); 
+    animation: fade-blink 1.5s infinite alternate; /* Fade Blink Animation */
+}
+@media (max-width: 1024px) {
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Space between menu icon and button */
+    }
+
+    .menu-btn .registerbtn {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #c32026;
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        font-size: 14px;
+    }
+
+    .menu-btn .registerbtn:hover {
+        background-color: #a81d22;
+    }
+    .none-display-register{
+        display: none;
+    }
+}
