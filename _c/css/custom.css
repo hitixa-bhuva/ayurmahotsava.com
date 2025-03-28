@@ -2289,7 +2289,7 @@ h3 {
     }
 
     .about-header h1 {
-        font-size: 2em;
+        font-size: 28px !important;
     }
 
     .about-text h2 {
@@ -2628,7 +2628,7 @@ h3 {
     }
 
     .mission-vision-section-section-header h2 {
-        font-size: 2em;
+        font-size: 28px !important;
     }
 
     .mission-vision-section-card h3 {
@@ -3028,7 +3028,7 @@ h3 {
     }
 
     .our-about-par-section-header h2 {
-        font-size: 2em;
+        font-size: 28px;
     }
 }
 
@@ -3325,7 +3325,7 @@ h3 {
     }
 
     .call-papers-section-section-title h2 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .call-papers-section-papers-content {

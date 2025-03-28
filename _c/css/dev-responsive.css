@@ -21,22 +21,72 @@
         height: 85px;
     }
 }
-
+@media (max-width: 768px) {
+    .delegate-hero-carousel {
+        height: 90vh;
+    }
+}
+.sponsors-prime-img .bg-dark, 
+.rounded {
+    background-color: #000;
+    border-radius: 15px;
+    padding: 1rem;
+}
 @media (max-width: 430px) {
+    .custome-padding-top-min{
+        padding-top: 60px !important;
+    }
     .wpcf7 span.wpcf7-form-control-wrap {
         padding-right: 0;
     }
     .inner .subtitle {
         font-size: 24px;
     }
-    .sponsors-prime-img {
-        width: 150px;
+    .important-details-section-header h2{
+        font-size: 28px;
     }
-
+    .sponsors-prime-title{
+        font-size: 28px;
+    }
+    .sponsors-prime-section{
+        padding: 43px 20px !important;
+    }
+    .sponsors-prime-img {
+        width: 170px !important;
+    }
+    .gdlr-color-wrapper{
+        padding-top: 30px;
+    }
+    .gdlr-item-title-wrapper .gdlr-item-title {
+        font-size: 28px !important;
+    }
+    .sponsors-prime-img-last{
+        width: 120px !important;
+    }
+    .home-first-slider-heading{
+        font-size: 28px !important;
+    }
+    .gdlr-item-title-wrapper.gdlr-item{
+        margin-bottom: 20px;
+    }
+    .organizing-team-name .gdlr-speaker-item-content{
+        margin-top: 10px !important;
+    }
+   .gdlr-speaker-item-content{
+        margin-top: 10px !important;
+    }
+    .about-header {
+        margin-bottom: 40px !important;
+    }
     .speaker-item-wrapper {
         text-align: center;
     }
-
+    .inquiry-title{
+        font-size: 28px !important;
+    }
+    .history-header h2{
+        font-size: 28px !important;
+    }
     .gdlr-speaker-thumbnail img {
         display: block;
         margin: 0 auto;
@@ -55,7 +105,7 @@
         height: 55px;
     }
     .about-ayur-vaidya-title {
-        font-size: 23px;
+        font-size: 28px;
         line-height: 1;
         letter-spacing: 1px;
     }
@@ -135,7 +185,7 @@
         padding: 5rem;
     }
     .Sub-theme-Ayurveda-paper-main-header h1 {
-        font-size: 1.5rem;
+        font-size: 28px;
     }
 }
 

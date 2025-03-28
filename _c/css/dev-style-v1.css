@@ -80,3 +80,22 @@ background-size: cover;
         display: none;
     }
 }
+#content-section-7 .gdlr-location-item {
+    max-width: 80%; /* Adjust width to prevent overflow */
+    margin: 0 auto; /* Center align */
+    text-align: center; /* Keep text aligned properly */
+    word-wrap: break-word; /* Ensure long text breaks correctly */
+}
+
+#content-section-7 .gdlr-location-place,
+#content-section-7 .gdlr-location-info {
+    font-size: 18px; /* Adjust font size for better readability */
+    line-height: 1.5; /* Improve spacing between lines */
+}
+
+@media (max-width: 768px) {
+    #content-section-7 .gdlr-location-item {
+        max-width: 100%; /* Allow full width on smaller screens */
+        font-size: 16px; /* Adjust font size for smaller devices */
+    }
+}
